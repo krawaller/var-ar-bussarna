@@ -10,6 +10,12 @@ L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
   detectRetina: true
 }).addTo(map);
 
+// Show the transport lines
+var transTileUrl = 'http://openptmap.org/tiles/{z}/{x}/{y}.png';
+var transLayer = L.tileLayer(transTileUrl, {maxZoom: 19});
+map.addLayer(transLayer);
+
+
 function renderItem(item) {
 
   var lat = item.y / 1000000;
