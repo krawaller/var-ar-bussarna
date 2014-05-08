@@ -28,7 +28,7 @@ html, body, #map {
 
 .vehicle-icon .arrow-wrapper .arrow-inner {
   position: absolute;
-  top: 0px;
+  top: 1px;
   left: 20px;
   width: 0px;
   height: 0px;
