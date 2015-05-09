@@ -58,7 +58,7 @@ function renderItem(item) {
 }
 
 //var URL = 'http://reseplanerare.vasttrafik.se/bin/query.exe/dny?&look_minx=10044745&look_maxx=12040389&look_miny=57025027&look_maxy=58406811&tpl=trains2json&look_productclass=1023&look_json=yes&performLocating=1&look_nv=zugposmode|2|get_ageofreport|yes|get_rtmsgstatus|yes|get_linenumber|yes|interval|10000|intervalstep|10000|&unique=1399449664000&'
-var CORS_URL = 'http://dev2.krawaller.se/vararbussarna2';
+var CORS_URL = 'http://crossorigin.me/http://reseplanerare.vasttrafik.se/bin/query.exe/dny?&look_minx=10044745&look_maxx=12040389&look_miny=57025027&look_maxy=58406811&tpl=trains2json&look_productclass=1023&look_json=yes&performLocating=1&look_nv=zugposmode|2|get_ageofreport|yes|get_rtmsgstatus|yes|get_linenumber|yes|interval|10000|intervalstep|10000|&unique=1399449664000&';
 
 function refresh() {
   $.getJSON(CORS_URL, function(data) {
